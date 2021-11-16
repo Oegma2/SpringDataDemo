@@ -9,9 +9,15 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringDataDemoApplication {
 	private static final Logger logger = LoggerFactory.getLogger(SpringDataDemoApplication.class);
 
+	public static void letsGo() {
+		logger.debug("Firing letsGo() boys");
+	}
+
 	public static void main(String[] args) {
-		logger.info("Main application V0.0.1 starting up");
 		SpringApplication.run(SpringDataDemoApplication.class, args);
+		logger.info("Main application V0.0.2 starting up");
+
+		letsGo();
 	}
 
 }
